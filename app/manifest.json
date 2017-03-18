@@ -14,7 +14,11 @@
       "scripts/background.js"
     ]
   },
-  "permissions": [],
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Click to active"
+  },
+  "permissions": ["tabs", "<all_urls>"],
   "content_scripts": [
     {
       "matches": [
